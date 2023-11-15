@@ -120,12 +120,6 @@ if ! shopt -oq posix; then
   fi
 fi
 
-#mount the partition
-if [ ! -f "/home/shwadkar/EDrive/.fscheck" ]; then
-    echo 'Mounting the partition sda5. Enter Password.'
-    sudo mount -t auto /dev/sda5 /home/shwadkar/EDrive
-fi
-
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
 export TOOLCHAIN_DIR=~/toolchains/gcc-arm-none-eabi-10.3-2021.10
