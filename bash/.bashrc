@@ -121,19 +121,13 @@ if ! shopt -oq posix; then
 fi
 
 #mount the partition
-if [ ! -f "/home/shwadkar/EDrive/.fscheck" ]; then
-    echo 'Mounting the partition sda5. Enter Password.'
-    sudo mount -t auto /dev/sda5 /home/shwadkar/EDrive
-fi
-
-if [ ! -f "/home/shwadkar/GDrive/.fscheck" ]; then
-    echo 'Mounting the partition sda3. Enter Password.'
-    sudo mount -t auto /dev/sda3 /home/shwadkar/GDrive
-fi
+#if [ ! -f "$HOME/EDrive/.fscheck" ]; then
+#    echo 'Mounting the partition sda5. Enter Password.'
+#    sudo mount -t auto /dev/sda5 $HOME/EDrive
+#fi
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
 source bash_exports.sh
 source bash_aliases.sh
 
-. "$HOME/.cargo/env"
