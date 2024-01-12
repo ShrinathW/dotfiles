@@ -128,6 +128,6 @@ fi
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
-source bash_exports.sh
-source bash_aliases.sh
+source ~/.bash_exports
+source ~/.bash_aliases
 

@@ -2,13 +2,11 @@
 cd ~
 
 echo 'Adding basrc and profiles..'
-mv .bashrc .bashrc_bkp
 ln -s dotfiles/bash/.bashrc .bashrc
-mv .profile .profile_bkp
 ln -s dotfiles/bash/.profile .profile
 
 echo 'Add exports and aliases...'
-cp dotfiles/bash/bash_exports.sh dotfiles/bash/bash_aliases.sh .
+cp dotfiles/bash/.bash_exports dotfiles/bash/.bash_aliases .
 echo 'Settingup vim...'
 chmod +x dotfiles/vim/pluginsetup.sh && dotfiles/vim/pluginsetup.sh
 

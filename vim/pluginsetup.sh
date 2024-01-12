@@ -1,6 +1,5 @@
 
 echo 'Adding vimrc..'
-mv ~/.vimrc ~/.vimrc_bkp
 ln -s ~/dotfiles/vim/.vimrc .vimrc
 
 cd ~/.vim
